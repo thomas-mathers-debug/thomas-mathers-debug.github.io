@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>What are the differences between relative, absolute, and fixed positioning? </title>
-    <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
-      <nav>
-          <a class="logo" href="./index.html"> <img src="./images/Dev.png"> </a>
-      
-      <ul>
-          <li><a href="../index.html"> Home</a</li>
-          <li><a href="sprint2-technical.html"> TECHNICAL SPRINTS</a></li>
-          <li><a href="#"> ABOUT ME</a></li>
-      </ul>
 
-    </nav>
-    <div class ="header">
-        <h1>Differences between relative, absolute, and fixed positioning?</h1>
-    </div>
+<head>
+  <title>What are the differences between relative, absolute, and fixed positioning? </title>
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <script src="../script.js"> </script>
+</head>
 
-    <section class ="content">
+<body>
+  <nav>
+    <a class="logo" href="../index.html"> <img src="../images/Dev.png"> </a>
+
+    <ul>
+      <li><a href="../index.html"> Home</a></li>
+      <li>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Technical Sprints</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="sprint2-technical.html">Technical2</a>
+            <a href="sprint3-technical.html">Technical3</a>
+            <a href="sprint4-technical.html">Technical4</a>
+            <a href="sprint5-technical.html">Technical5</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#"> ABOUT ME</a></li>
+    </ul>
+
+  </nav>
+  <div class="header">
+    <h1>Differences between relative, absolute, and fixed positioning?</h1>
+  </div>
+
+  <section class="content">
     <h3>The Position Property</h3>
 
-    <h4>-Sets the positioning method used for an element, this is in regards to the top, bottom, left and right properties we will explore the relative, absolute and fixed property.</h4>
+    <h4>-Sets the positioning method used for an element, this is in regards to the top, bottom, left and right
+      properties we will explore the relative, absolute and fixed property.</h4>
 
     <h3> Relative postion </h3>
-    <div class = position_content>
-    <h4>Setting the top,right,bottom or left properties will adjust it away from its normal position. Other content will not fit into the gap.</h4>
-    <img src="./images/relativeCSS.PNG" alt="relativeCSS">
-    <img src="../images/relativeHTML.PNG" alt="relativeHTML">
-    <h4>Notice the left:30px; that moves the test_box from the leftside 30 pixels. </h4>
+    <div class=position_content>
+      <h4>Setting the top,right,bottom or left properties will adjust it away from its normal position. Other content
+        will not fit into the gap.</h4>
+      <img src="../images/relativeCSS.PNG" alt="relativeCSS">
+      <img src="../images/relativeHTML.PNG" alt="relativeHTML">
+      <h4>Notice the left:30px; that moves the test_box from the leftside 30 pixels. </h4>
     </div>
 
     <h3> Fixed postion </h3>
-    <div class = position_content>
-    <h4> The element is removed from normal workflow and will only appear once the position methods are called, the fixed box will stay in the same location on the page no matter how much you scroll. </h4>
-    <img src="./images/fixedCSS.PNG" alt="fixedCSS">
-    <img src="./images/fixedHTML.PNG" alt="fixeHTML">
-    <h4>Notice the right:0px; and bottom:0px; they are almost like coordinates 0 pixles from the right 0 from the bottom. Have a look in the right corner. </h4>
+    <div class=position_content>
+      <h4> The element is removed from normal workflow and will only appear once the position methods are called, the
+        fixed box will stay in the same location on the page no matter how much you scroll. </h4>
+      <img src="../images/fixedCSS.PNG" alt="fixedCSS">
+      <img src="../images/fixedHTML.PNG" alt="fixeHTML">
+      <h4>Notice the right:0px; and bottom:0px; they are almost like coordinates 0 pixles from the right 0 from the
+        bottom. Have a look in the right corner. </h4>
     </div>
 
     <h3> Absolute postion </h3>
-    <div class = position_content>
-    <h4>The element is removed from the normal workflow, once the position methods have been incuded, it is positioned relative to the nearest ancestor. If no ancestor or parent is present it moves relative to the body.</h4>
-    <img src="./images/absoluteCSS.PNG" alt="absoluteCSS">
-    <h4>The element has a ancestor which contains relative position</h4>
-    <img src="./images/absoluteHTML.PNG" alt="absoluteCSS">
-    <h4>So the child will move relative to the parent box, in this case 0 pixels from the bottom as seen below</h4>
-    <img src="./images/absoluteExample.PNG" class= "absoluteExample" alt="absoluteExample">
+    <div class=position_content>
+      <h4>The element is removed from the normal workflow, once the position methods have been incuded, it is positioned
+        relative to the nearest ancestor. If no ancestor or parent is present it moves relative to the body.</h4>
+      <img src="../images/absoluteCSS.PNG" alt="absoluteCSS">
+      <h4>The element has a ancestor which contains relative position</h4>
+      <img src="../images/absoluteHTML.PNG" alt="absoluteCSS">
+      <h4>So the child will move relative to the parent box, in this case 0 pixels from the bottom as seen below</h4>
+      <img src="../images/absoluteExample.PNG" class="absoluteExample" alt="absoluteExample">
     </div>
 
-    <div class = "test_box">
-        <p>This element and has position: fixed;</p>
+    <div class="test_box">
+      <p>This element and has position: fixed;</p>
     </div>
-    
+
   </section>
 
-  
-    
-    <!-- this is a comment. -->
-  
-  </body>
+
+
+  <!-- this is a comment. -->
+
+</body>
+
 </html>

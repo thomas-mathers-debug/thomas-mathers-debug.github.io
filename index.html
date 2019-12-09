@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tom's blog</title>
-    <meta charset="UTF-8">
-    <link href="styles/main.css" rel="stylesheet" type="text/css" />
-  <body>
-      <nav>
-              <a class="logo" href="index.html"> <img src="Images/Dev.png"> </a>
-          
-          <ul>
-              <li><a href="index.html"> Home</a></li>
-              <li><a href="blog/sprint2-technical.html"> TECHNICAL SPRINTS</a></li>
-              <li><a href="#"> ABOUT ME</a></li>
-          </ul>
 
-      </nav>
+<head>
+  <title>Tom's blog</title>
+  <meta charset="UTF-8">
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"> </script>
 
-    <div class ="header">
-        <h1>Welcome to Tom's Blog</h1>
-    </div>
-     
-    <h2> This blog will contain information about my academic progression.</h2>
-    
-    <div class = "academic_list">
-      <ul>
-        <li>Git</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    
-    </div>
+<body>
+  <nav>
+    <a class="logo" href="index.html"> <img src="Images/Dev.png"> </a>
 
-    <sectio n>
-      Hi below are the links to my blogs
-    </section>
-    <section class = "container">
-    <div class ="item">
-        <a href="blog/sprint1-cultural.html"> sprint1-culturalBlog</a> 
-    </div>
-    <div class ="item">
-        <a href="blog/sprint2-cultural.html"> sprint2-culturalBlog</a>
-    </div>
+    <ul>
+      <li><a href="index.html"> Home</a></li>
+      <li>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Technical Sprints</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="blog/sprint2-technical.html">Technical2</a>
+            <a href="blog/sprint3-technical.html">Technical3</a>
+            <a href="blog/sprint4-technical.html">Technical4</a>
+            <a href="blog/sprint5-technical.html">Technical5</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#"> ABOUT ME</a></li>
+    </ul>
 
-    </section>
+  </nav>
 
-  </body>
+  <div class="header">
+    <h1>Welcome to Tom's Blog</h1>
+  </div>
+
+  <h2> This blog will contain information about my academic progression.</h2>
+
+  <div class="academic_list">
+    <ul>
+      <li>Git</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+
+  </div>
+
+
+  <section>
+
+
+  </section>
+</body>
+
 </html>
