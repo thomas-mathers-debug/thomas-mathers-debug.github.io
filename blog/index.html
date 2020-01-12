@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+
+    
+    <div id= "calculator">
+
+
+        <input type="text" disabled="disabled" id="answer">
+
+
+        <div class = "row">
+            <button id="AC" onClick="acPress()"> AC</button>
+            <button id="CE" onClick="cePress()"> CE</button>
+            <button id="perc" onClick="showAnswer('%')"> %</button>
+                    
+        </div>
+        <div class = "row">
+            <button id="7" onClick="showAnswer(7)"> 7</button>
+            <button id="8" onClick="showAnswer(8)"> 8</button>
+            <button id="9" onClick="showAnswer(9)"> 9</button>
+            <button id="÷" onClick="showAnswer('/')"> / </button>
+        </div>
+
+        <div class = "row">
+            <button id="4" onClick="showAnswer(4)"> 4</button>
+            <button id="5" onClick="showAnswer(5)"> 5</button>
+            <button id="6" onClick="showAnswer(6)"> 6</button>
+            <button id="x" onClick="showAnswer('*')"> x</button>
+            
+        </div>
+        
+        <div class = "row">
+            <button id="1" onClick="showAnswer(1)"> 1</button>
+            <button id="2" onClick="showAnswer(2)"> 2</button>
+            <button id="3" onClick="showAnswer(3)"> 3</button>
+            <button id="minus" onClick="showAnswer('-')"> -</button>
+                    
+        </div>
+
+        <div class = "row">
+            <button id="0" onClick="showAnswer(0)"> 0</button>
+            <button id="." onClick="showAnswer('.')"> .</button>
+            <button id="plus" onClick="showAnswer('+')"> +</button>
+            <button id="equal" onClick="equals()"> =</button>
+                
+        </div>
+
+        
+    </div>
+    
+    
+</body>
+
+</html>

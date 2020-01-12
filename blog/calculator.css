@@ -1,0 +1,76 @@
+body {
+
+}
+
+h1{
+    text-align: center;
+}
+  
+#calculator {
+    max-width: 350px;
+    
+    margin: auto;
+    background:#4D5049;
+    padding: 10px;
+}
+
+#calculator > #answer {
+    
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 84%;
+    background: #D1E7A9;
+    border-color: #D1E7A9;
+    font-size:26px;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+.row {
+    display: flex;
+    
+    justify-content: center;
+
+    
+
+}
+
+.row > button{
+     
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+    background: #828282;
+    border-color: #828282;
+    color: white;
+    font-size: 26px;
+
+    
+    
+
+}
+
+.row > #AC{
+     
+    margin: 10px;
+    height: 60px;
+    width: 140px;
+
+    
+    
+
+}
+
+#x, #÷, #plus,#minus,#perc  {
+    background: #419FC3;
+    border-color: #419FC3;
+}
+
+#AC,#CE,#equal {
+    background: #E85F60;
+    border-color: #E85F60;
+}
