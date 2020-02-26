@@ -148,4 +148,8 @@ nav > .logo > img  {
     margin-bottom:20px;
     font-size: 18px;
 }
-
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
